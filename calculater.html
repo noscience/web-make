@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Function</h1>
+
+<input type="number" id="a">
+<input type="number" id="b">
+<input type="button" onclick="plus()" value="plus">
+<input type="button" onclick="cut()" value="cut">
+<input type="button" onclick="multiply()" value="multiply">
+<input type="button" onclick="divide()" value="divide">
+<input type="button" onclick="clean()" value="clean">
+</p>
+<script>
+	function plus(x,y){
+		var x,y
+		x=parseInt(document.getElementById("a").value);
+		y=parseInt(document.getElementById("b").value);
+		document.getElementById("result").innerHTML=x+y;
+	}
+	function cut(x,y){
+		var x,y
+		x=parseInt(document.getElementById("a").value);
+		y=parseInt(document.getElementById("b").value);
+		document.getElementById("result").innerHTML=x-y;
+	}
+	function multiply(x,y){
+		var x,y
+		x=parseInt(document.getElementById("a").value);
+		y=parseInt(document.getElementById("b").value);
+		document.getElementById("result").innerHTML=x*y;
+	}
+	function divide(x,y){
+		var x,y
+		x=parseInt(document.getElementById("a").value);
+		y=parseInt(document.getElementById("b").value);
+		document.getElementById("result").innerHTML=x/y;
+	}
+	function clean(x,y){
+		var x,y;
+		x=parseInt(document.getElementById("a").value="");
+		y=parseInt(document.getElementById("b").value="");
+		document.getElementById("result").innerHTML="";
+	}
+</script>
+<output id="result"></output>
+
+
+</body>
+</html>

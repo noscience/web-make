@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input type="number" id="a">
+<input type="button" onclick="determination()" value="判斷">
+<p id="demo"></p>
+<script>
+function determination(){
+	var x,result;
+	x=parseInt(document.getElementById("a").value);
+	if  (x>=60){
+		result="及格";
+	}
+	else{
+		result="不及格";
+	}
+	document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
